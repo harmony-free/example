@@ -1,10 +1,37 @@
 {
   "app": {
-    "signingConfigs": [],
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\Administrator\\.ohos\\config\\default_example_fHoLtxGcWrhetLQkUIbYFlOe8cz9yKSxILhExa1uoqU=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B5DDB981F1C65EE686D15202A522FFDD3726B8406ADDEB4B39523ED721F5955EA75907D1D3FE122",
+          "profile": "C:\\Users\\Administrator\\.ohos\\config\\default_example_fHoLtxGcWrhetLQkUIbYFlOe8cz9yKSxILhExa1uoqU=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\Administrator\\.ohos\\config\\default_example_fHoLtxGcWrhetLQkUIbYFlOe8cz9yKSxILhExa1uoqU=.p12",
+          "storePassword": "0000001BB0FB0F1B36F411F1380870CDF5C332886860C3834FDD7F1A7E436EE5E3E531CDEED2F560EC7202"
+        }
+      },
+      {
+        "name": "ybj",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\Administrator\\.ohos\\config\\ybj_example_fHoLtxGcWrhetLQkUIbYFlOe8cz9yKSxILhExa1uoqU=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B411469E330FABFE9078800C56F316D55A98EEEB5386DB407B5BF984B3B30828C23634E0FEEC94E",
+          "profile": "C:\\Users\\Administrator\\.ohos\\config\\ybj_example_fHoLtxGcWrhetLQkUIbYFlOe8cz9yKSxILhExa1uoqU=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\Administrator\\.ohos\\config\\ybj_example_fHoLtxGcWrhetLQkUIbYFlOe8cz9yKSxILhExa1uoqU=.p12",
+          "storePassword": "0000001B6EA0FE51B131DBCB9614163717725285D6ED17DAE1604C6806B95BE2A1F6FAA7EFBBEA9A8979BD"
+        }
+      }
+    ],
     "products": [
       {
         "name": "default",
-        "signingConfig": "default",
+        "signingConfig": "ybj",
         "compatibleSdkVersion": "5.0.3(15)",
         "runtimeOS": "HarmonyOS",
         "buildOption": {
@@ -28,6 +55,54 @@
     {
       "name": "entry",
       "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "global",
+      "srcPath": "./global",
+    },
+    {
+      "name": "refresh",
+      "srcPath": "./refresh",
+    },
+    {
+      "name": "common",
+      "srcPath": "./common",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "home",
+      "srcPath": "./home",
+    },
+    {
+      "name": "login",
+      "srcPath": "./login",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "feature",
+      "srcPath": "./feature",
       "targets": [
         {
           "name": "default",

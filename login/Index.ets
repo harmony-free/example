@@ -1,0 +1,1 @@
+export { LoginIndex } from './src/main/ets/pages/LoginIndex';

@@ -1,5 +1,7 @@
 /node_modules
 /oh_modules
+/refresh
+/global
 /local.properties
 /.idea
 **/build
