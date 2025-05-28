@@ -4,6 +4,11 @@
   "dependencies": {
     "@free/global": "file:./global",
     "@free/refresh": "file:./refresh",
+    "@free/open-photo": "file:./open-photo",
+    "@free/network": "file:./network",
+    "@free/location": "file:./location",
+    "@free/dialog": "file:./dialog",
+    "@free/loading": "file:./loading",
     "common": "file:./common",
     "home": "file:./home",
 

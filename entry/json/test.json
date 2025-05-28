@@ -1,0 +1,42 @@
+{
+    "name":"余邦锦",
+    "age":28,
+    "sex":"男",
+    "type": null ,
+    "data": {
+        "status":0,
+        "title":"活动",
+        "found": {
+            "status":1,
+            "title":"发现"
+        }
+    },
+    "list": [
+        "哈哈哈哈",
+        "呵呵呵呵"
+    ],
+    "dataList": [
+        {
+            "status":0,
+            "title":"活动"
+        },
+        {
+            "status":1,
+            "title":"发现"
+        }
+    ],
+    "listList": [
+        [
+            [
+                [
+                    [
+                        {
+                            "status":1,
+                            "title":"发现"
+                        }
+                    ]
+                ]
+            ]
+        ]
+    ]
+}

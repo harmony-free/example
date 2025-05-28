@@ -20,11 +20,11 @@
         "material": {
           "certpath": "C:\\Users\\Administrator\\.ohos\\config\\ybj_example_fHoLtxGcWrhetLQkUIbYFlOe8cz9yKSxILhExa1uoqU=.cer",
           "keyAlias": "debugKey",
-          "keyPassword": "0000001B411469E330FABFE9078800C56F316D55A98EEEB5386DB407B5BF984B3B30828C23634E0FEEC94E",
+          "keyPassword": "0000001BBE95890B8957A7131389B5F174C549C44805C9EEED9A8C05D61AF6873F4AE5EC90330ECAC98AD3",
           "profile": "C:\\Users\\Administrator\\.ohos\\config\\ybj_example_fHoLtxGcWrhetLQkUIbYFlOe8cz9yKSxILhExa1uoqU=.p7b",
           "signAlg": "SHA256withECDSA",
           "storeFile": "C:\\Users\\Administrator\\.ohos\\config\\ybj_example_fHoLtxGcWrhetLQkUIbYFlOe8cz9yKSxILhExa1uoqU=.p12",
-          "storePassword": "0000001B6EA0FE51B131DBCB9614163717725285D6ED17DAE1604C6806B95BE2A1F6FAA7EFBBEA9A8979BD"
+          "storePassword": "0000001B2F639E33FFAFC3ED220A951F4DA21EAE42F7006B2E0D431EAB89DF3ABBE2239CDBBC8D4047CE5A"
         }
       }
     ],
@@ -69,6 +69,14 @@
       "srcPath": "./global",
     },
     {
+      "name": "OpenPhoto",
+      "srcPath": "./open-photo",
+    },
+    {
+      "name": "network",
+      "srcPath": "./network",
+    },
+    {
       "name": "refresh",
       "srcPath": "./refresh",
     },
@@ -111,6 +119,18 @@
           ]
         }
       ]
+    },
+    {
+      "name": "location",
+      "srcPath": "./location",
+    },
+    {
+      "name": "dialog",
+      "srcPath": "./dialog",
+    },
+    {
+      "name": "loading",
+      "srcPath": "./loading",
     }
   ]
 }

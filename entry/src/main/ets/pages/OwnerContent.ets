@@ -1,6 +1,7 @@
-import { global, router } from "@free/global";
+import { global, router as nav } from "@free/global";
 import { PageFace, RefreshList, RefreshUtils } from "@free/refresh";
 import "./systemicon/SystemIcon"
+import { router } from "@kit.ArkUI";
 
 interface IconFace{
   title: string
@@ -42,7 +43,7 @@ export struct OwnerContent{
     .padding(10)
     .backgroundColor(Color.White)
     .onClick(()=>{
-      router.push((data as IconModel).router)
+      nav.push((data as IconModel).router)
     })
   }
   @Builder
@@ -50,8 +51,12 @@ export struct OwnerContent{
     Row(){
       Image($r('sys.media.huawei_id_logo_red')).width(100).height(100).borderRadius(50)
       Column(){
-        Text("姓名").fontSize(20).fontColor(Color.Black)
-        Text("账号：12326516712")
+        if (global.storage.get("token", "") == ""){
+          Text("登录注册").fontSize(25).fontColor(Color.Black)
+        }else{
+          Text("姓名").fontSize(20).fontColor(Color.Black)
+          Text("账号：12326516712")
+        }
       }.flexGrow(1).alignItems(HorizontalAlign.Start).justifyContent(FlexAlign.SpaceEvenly).margin(10).height(100)
       Image($r('sys.media.ohos_ic_public_arrow_right')).width(30)
     }
@@ -61,7 +66,7 @@ export struct OwnerContent{
     .margin({bottom:10}).backgroundColor(Color.White)
     .onClick(()=>{
       if (global.storage.get("token", "") == "") {
-
+        router.pushUrl({url:'@bundle:com.example.example/login/ets/pages/LoginIndex'})
       }
     })
   }

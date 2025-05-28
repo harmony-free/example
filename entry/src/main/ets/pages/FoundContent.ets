@@ -1,3 +1,4 @@
+import { Dialog } from "@free/dialog"
 import { global, NavBar, router } from "@free/global"
 import { PageFace, RefreshList, RefreshUtils } from "@free/refresh"
 import "./founddeatil/FoundDetail"
