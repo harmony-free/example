@@ -9,7 +9,9 @@
     "@free/location": "file:./location",
     "@free/dialog": "file:./dialog",
     "@free/loading": "file:./loading",
+    "@free/map": "file:./map",
     "common": "file:./common",
+    "login": "file:./login",
     "home": "file:./home",
 
   },

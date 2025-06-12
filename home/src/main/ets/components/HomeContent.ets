@@ -6,6 +6,7 @@ import { geoLocationManager } from "@kit.LocationKit"
 import './AddressPage'
 import { print } from "@kit.BasicServicesKit"
 import { JSON } from "@kit.ArkTS"
+import { mapCommon } from "@kit.MapKit"
 
 @Component
 export struct HomeContent{
@@ -23,6 +24,9 @@ export struct HomeContent{
       if (p == true) {
         this.local.location().then((v)=>{
           this.address = v;
+          let latLng = this.local.toGCJ02(this.address as mapCommon.LatLng)
+          this.address.latitude = latLng.latitude
+          this.address.longitude = latLng.longitude
         })
       }
     })

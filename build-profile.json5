@@ -20,18 +20,31 @@
         "material": {
           "certpath": "C:\\Users\\Administrator\\.ohos\\config\\ybj_example_fHoLtxGcWrhetLQkUIbYFlOe8cz9yKSxILhExa1uoqU=.cer",
           "keyAlias": "debugKey",
-          "keyPassword": "0000001BBE95890B8957A7131389B5F174C549C44805C9EEED9A8C05D61AF6873F4AE5EC90330ECAC98AD3",
+          "keyPassword": "0000001A645A3A853A828DD2146DC4FD0BBBBBF9271BF38259BDAFDF604D9108F4FC24C89F4F39AAD0A0",
           "profile": "C:\\Users\\Administrator\\.ohos\\config\\ybj_example_fHoLtxGcWrhetLQkUIbYFlOe8cz9yKSxILhExa1uoqU=.p7b",
           "signAlg": "SHA256withECDSA",
           "storeFile": "C:\\Users\\Administrator\\.ohos\\config\\ybj_example_fHoLtxGcWrhetLQkUIbYFlOe8cz9yKSxILhExa1uoqU=.p12",
-          "storePassword": "0000001B2F639E33FFAFC3ED220A951F4DA21EAE42F7006B2E0D431EAB89DF3ABBE2239CDBBC8D4047CE5A"
+          "storePassword": "0000001ADF0D8E5E6524BBF4632A19C44EA969DB63111A9736A1D74B2E1F3E28BAA9F972CFA243D26620"
+        }
+      },
+      {
+        "name": "debug",
+        "type": "HarmonyOS",
+        "material": {
+          "storeFile": "D:/harmony/example/keystore/free.p12",
+          "storePassword": "0000001AFF43DB207F3535A75AF0BC061BB9ED4E79E1E1469DEF98102717EFAECD2F7623D00F5346BC79",
+          "keyAlias": "free_debug",
+          "keyPassword": "0000001A231CC0D69EFA13674D851DA90B0B6073AB8C9BFF4F472A851A8C8952E2C14E30C733B8F64FAF",
+          "signAlg": "SHA256withECDSA",
+          "profile": "D:/harmony/example/keystore/freeDebug.p7b",
+          "certpath": "D:/harmony/example/keystore/free.cer"
         }
       }
     ],
     "products": [
       {
         "name": "default",
-        "signingConfig": "ybj",
+        "signingConfig": "debug",
         "compatibleSdkVersion": "5.0.3(15)",
         "runtimeOS": "HarmonyOS",
         "buildOption": {
@@ -109,18 +122,6 @@
       ]
     },
     {
-      "name": "feature",
-      "srcPath": "./feature",
-      "targets": [
-        {
-          "name": "default",
-          "applyToProducts": [
-            "default"
-          ]
-        }
-      ]
-    },
-    {
       "name": "location",
       "srcPath": "./location",
     },
@@ -131,6 +132,10 @@
     {
       "name": "loading",
       "srcPath": "./loading",
+    },
+    {
+      "name": "map",
+      "srcPath": "./map",
     }
   ]
 }

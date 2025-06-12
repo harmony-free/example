@@ -2,6 +2,7 @@ import { global, NavBar } from "@free/global"
 import { PageFace, RefreshList, RefreshUtils } from "@free/refresh"
 import "./founddeatil/FoundDetail"
 import { router } from "@kit.ArkUI"
+import { LOGIN_INDEX } from "common"
 
 export class RefreshModel {
   title: string = "RefreshModel"
@@ -14,7 +15,7 @@ export struct ActivityContent{
   itemBuilder(model:object){
     Text((model as RefreshModel).title).onClick(()=>{
       // router.pushUrl({url:'pages/LoginIndex'})
-      router.pushUrl({url:'@bundle:com.example.example/login/ets/pages/LoginIndex'})
+      router.pushUrl({url:LOGIN_INDEX})
     })
   }
   @Builder

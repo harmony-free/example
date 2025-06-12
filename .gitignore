@@ -2,6 +2,13 @@
 /oh_modules
 /refresh
 /global
+/loading
+/open-photo
+/dialog
+/network
+/location
+/map
+/generator
 /local.properties
 /.idea
 **/build

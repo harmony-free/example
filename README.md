@@ -1,23 +1,23 @@
 # example
 
-#### 介绍
+#### 介绍 [English](README.en.md)
 这里用来展示Harmony-free包的案例
 
 #### 软件架构
-软件架构说明
 
+使用了HSP公共module、har module、以及feature。
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+项目基础建设，各种基础组件。
 
 #### 使用说明
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+举例了global、dialog、loading、location、refresh、open-photo、network、map使用方式。
+
+举例了HSP、HAR、HAP的使用方式。
+
+项目的基础架构 home、login、own 公共模块。
+
+常用公共工具类 common。
 
 #### 参与贡献
 

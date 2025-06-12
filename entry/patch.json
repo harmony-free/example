@@ -1,7 +1,7 @@
 {
   "app": {
-    "bundleName": "com.example.example",
-    "patchVersionCode": 2000407,
+    "bundleName": "com.ybj.free.freeAPP",
+    "patchVersionCode": 2000545,
     "versionCode": 1000000
   },
   "module": {

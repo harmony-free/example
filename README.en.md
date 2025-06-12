@@ -1,22 +1,23 @@
 # example
 
-#### Description
-这里用来展示Harmony-free包的案例
+#### Introduction [中文](README.md)
+This section is used to present examples of the Harmony-free package.
 
-#### Software Architecture
-Software architecture description
+Software Architecture
 
-#### Installation
+Used the HSP common module, the har module, and the feature.
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+Project infrastructure, various basic components.
 
-#### Instructions
+#### Instructions for Use
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+Examples of the usage methods for global, dialog, loading, location, refresh, open-photo, network, and map are provided.
+
+Examples of the usage of HSP, HAR, and HAP have been provided.
+
+The basic architecture of the project includes the home, login, and own public modules.
+
+Common utility classes.
 
 #### Contribution
 

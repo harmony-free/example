@@ -1,8 +1,7 @@
 {
   "modelVersion": "5.0.3",
   "dependencies": {
-//    "@free/hvigor-arkts-gen-model": "file:../global/hvigor/free-hvigor-arkts-gen-model-1.0.0.tgz",
-    "@free/hvigor-arkts-gen-model": "file:../hvigor-arkts-gen-model"
+    "@free/generator": "file:../generator/lib/generator-1.0.0.tgz"
   },
   "execution": {
     // "analyze": "normal",                     /* Define the build analyze mode. Value: [ "normal" | "advanced" | false ]. Default: "normal" */

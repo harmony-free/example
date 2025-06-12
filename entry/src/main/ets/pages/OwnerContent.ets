@@ -2,6 +2,7 @@ import { global, router as nav } from "@free/global";
 import { PageFace, RefreshList, RefreshUtils } from "@free/refresh";
 import "./systemicon/SystemIcon"
 import { router } from "@kit.ArkUI";
+import { LOGIN_INDEX } from "common";
 
 interface IconFace{
   title: string
@@ -66,7 +67,7 @@ export struct OwnerContent{
     .margin({bottom:10}).backgroundColor(Color.White)
     .onClick(()=>{
       if (global.storage.get("token", "") == "") {
-        router.pushUrl({url:'@bundle:com.example.example/login/ets/pages/LoginIndex'})
+        router.pushUrl({url:LOGIN_INDEX})
       }
     })
   }
