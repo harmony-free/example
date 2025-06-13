@@ -9,6 +9,7 @@
 /location
 /map
 /generator
+/wechat
 /local.properties
 /.idea
 **/build

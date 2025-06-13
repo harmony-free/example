@@ -17,6 +17,10 @@
         "name": "ohos.permission.GET_NETWORK_INFO"
       }
     ],
+    "querySchemes": [
+      "weixin",
+      "wxopensdk"
+    ],
     "deliveryWithInstall": true,
     "installationFree": false,
     "pages": "$profile:main_pages",
@@ -36,7 +40,8 @@
               "entity.system.home"
             ],
             "actions": [
-              "action.system.home"
+              "action.system.home",
+              "wxentity.action.open"
             ]
           }
         ]

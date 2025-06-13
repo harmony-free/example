@@ -136,6 +136,10 @@
     {
       "name": "map",
       "srcPath": "./map",
+    },
+    {
+      "name": "wechat",
+      "srcPath": "./wechat",
     }
   ]
 }
